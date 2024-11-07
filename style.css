@@ -28,8 +28,8 @@
 }
 
 body{
-    /* background: var(--primary-color); */
-    background: var(--tetiary-color);
+    background: var(--primary-color);
+    /* background: var(--tetiary-color); */
     font-family: inter;
     margin-bottom: 100px;
 }
@@ -472,8 +472,9 @@ span#connect {
 /* .keypad 
  */
  .keys {
-    /* border: 2px solid red; */
-    width: 400px;
+    /* border: 2px solid green; */
+    max-width: 500px;
+    width: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
@@ -485,13 +486,18 @@ span#connect {
     font-size: 30px;
     color: var(--secondary-color);
 
+
  }
 
  .key , .clear-input{
     cursor: pointer;
- }
+    /* border:2px solid yellow; */
+    text-align: center;
+}
 
- .clear-input {
+.clear-input {
+    display: flex;
+     align-items: center;
     font-size: 18px;
     font-weight: 500;
  }
