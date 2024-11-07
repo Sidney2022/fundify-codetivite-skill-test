@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Skill Test</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-items">
+                <li><img src="./images/Frame 586916.svg" alt=""></li>
+                <li><img src="./images/002-swap 1.svg" alt=""></li>
+                <li><img src="./images/Frame 586889.svg" alt=""></li>
+                <li><img src="./images/LetsIconsCreditCardLight 1.svg" alt=""></li>
+                <li><img src="./images/PhGearThin.svg" alt=""></li>
+            </ul>
+        </div>
+    </nav>
+
+
+   
+
+    <div class="top-nav">
+        <div class="container">
+            <div class="top-nav-content">
+                <span class="text-icon">
+                    <a onclick="pagenav('index.html')"><img src="./images/Arrow_left.svg" alt=""> </a>
+                </span>
+                <h2>Send Money</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="rec-info flex gap1 align-i-center justify-cont-center">
+        <span>To </span> <p> Shater Tsavar</p>
+    </div>
+    <div class="container">
+        <div class="user-wallet-info flex align-i-center justify-cont-">
+            <p class="wallet-bal-text">Wallet balance : </p>
+            <p class="wallet-bal-amt">$25,000.40</p>
+        </div>
+    </div>
+
+    <div class="tf-methods">
+        <div class="container">
+           <form action="#">
+                <div class="input-field">
+                    <span class="currency">$</span>
+                    <input type="text" placeholder="">
+                    <select name="" id="">
+                        <option value="">CHF</option>
+                        <option value="">USD</option>
+                        <option value="">EUR</option>
+                        <option value="">GBP</option>
+                        <option value="">UKR</option>
+                    </select>
+                </div>
+                <p class="tf-fee text-center">+ $200 Transfer Fee</p>
+                <div class="input-field">
+                    <input type="text" placeholder="Comment (Optional)">
+                </div>
+           </form>
+           <button onclick="pagenav('pin.html')" class="confirmBtn text-center">Confirm</button>
+        </div>
+    </div>
+   
+    
+
+   
+
+
+    <script>
+        function pagenav(location) {
+            window.location.href=location
+        }
+
+        
+    </script>
+</body>
+</html>

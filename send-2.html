@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+
+    </style>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>= Test</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-items">
+                <li><img src="./images/Frame 586916.svg" alt=""></li>
+                <li><img src="./images/002-swap 1.svg" alt=""></li>
+                <li><img src="./images/Frame 586889.svg" alt=""></li>
+                <li><img src="./images/LetsIconsCreditCardLight 1.svg" alt=""></li>
+                <li><img src="./images/PhGearThin.svg" alt=""></li>
+            </ul>
+        </div>
+    </nav>
+
+
+   
+
+    <div class="top-nav">
+        <div class="container">
+            <div class="top-nav-content">
+                <span class="text-icon">
+                    <a onclick="pagenav('index.html')"><img src="./images/Arrow_left.svg" alt=""> </a>
+                </span>
+                <h2>Send To Fundify Account</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="tf-methods">
+        <div class="container">
+           <form action="send-money.html">
+                <input name="user_tag" type="text" placeholder="@Usertag or Name">
+           </form>
+           <div class="txn-suggests">
+                <!-- <div class="txn flex justify-cont-between">
+                    <div class="txn-left-detail flex  gap1">
+                        <div class="txn-user flex-col">
+                            <p>Shater Tsavar</p>
+                            <span class="txn-desc">@Shatermt</span>
+                        </div>
+                    </div>  
+                    <div class="txn-right-detail">
+                        <div class="txn-user flex-col">
+                            <p class="flex align-i-center gap2"><img width="20px" src="./images/Frame 586916.svg"  alt=''>24,990 Points</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="txn flex justify-cont-between">
+                    <div class="txn-left-detail flex  gap1">
+                        <div class="txn-user flex-col">
+                            <p>Satar Mchiaga</p>
+                            <span class="txn-desc">@MchiagaS</span>
+                        </div>
+                    </div>  
+                    <div class="txn-right-detail">
+                        <div class="txn-user flex-col">
+                            <p class="flex align-i-center gap2"><img width="20px" src="./images/Frame 586916.svg"  alt=''>40 Points</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="txn flex justify-cont-between">
+                    <div class="txn-left-detail flex  gap1">
+                        <div class="txn-user flex-col">
+                            <p>Shater Tsavar</p>
+                            <span class="txn-desc">@Shatermt</span>
+                        </div>
+                    </div>  
+                    <div class="txn-right-detail">
+                        <div class="txn-user flex-col">
+                            <p class="flex align-i-center gap2"><img width="20px" src="./images/Frame 586916.svg"  alt=''>24,990 Points</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="txn flex justify-cont-between">
+                    <div class="txn-left-detail flex  gap1">
+                        <div class="txn-user flex-col">
+                            <p>Satar Mchiaga</p>
+                            <span class="txn-desc">@MchiagaS</span>
+                        </div>
+                    </div>  
+                    <div class="txn-right-detail">
+                        <div class="txn-user flex-col">
+                            <p class="flex align-i-center gap2"><img width="20px" src="./images/Frame 586916.svg"  alt=''>40 Points</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="txn flex justify-cont-between">
+                    <div class="txn-left-detail flex  gap1">
+                        <div class="txn-user flex-col">
+                            <p>Shater Tsavar</p>
+                            <span class="txn-desc">@Shatermt</span>
+                        </div>
+                    </div>  
+                    <div class="txn-right-detail">
+                        <div class="txn-user flex-col">
+                            <p class="flex align-i-center gap2"><img width="20px" src="./images/Frame 586916.svg"  alt=''>24,990 Points</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="txn flex justify-cont-between">
+                    <div class="txn-left-detail flex  gap1">
+                        <div class="txn-user flex-col">
+                            <p>Satar Mchiaga</p>
+                            <span class="txn-desc">@MchiagaS</span>
+                        </div>
+                    </div>  
+                    <div class="txn-right-detail">
+                        <div class="txn-user flex-col">
+                            <p class="flex align-i-center gap2"><img width="20px" src="./images/Frame 586916.svg"  alt=''>40 Points</p>
+                        </div>
+                    </div>
+                </div> -->
+           </div>
+
+           <button class="confirmBtn text-center">Confirm</button>
+        </div>
+    </div>
+   
+    
+
+   
+
+
+    <script>
+        function pagenav(location) {
+            window.location.href=location
+        }
+        // let dummyData=[
+        //     {name:"Dan Belo", user_tag:"@shaffy", 
+        //         txn_pin:7658, acct_balance:20098, points:45098
+        //     },
+        //     {name:"Shater Tsaver", user_tag:"@shaterT", 
+        //         txn_pin:7658, acct_balance:290098, points:498
+        //     },
+        //     {name:"Satar Mchiaga", user_tag:"@MchiagaS", 
+        //         txn_pin:7658, acct_balance:208, points:4598
+        //     } ]
+        // const txn_suggests=document.querySelector(".txn-suggests")
+        // const sendFormInput =document.querySelector("input")
+        // sendFormInput.addEventListener("keyup", () => {
+        //     txn_suggests.textContent=''
+        //     if (sendFormInput.value.trim().length !== 0)  {
+        //         var matches=dummyData.filter(data => 
+        //             data.name.toLowerCase().includes(sendFormInput.value.toLowerCase()) ||
+        //             data.user_tag.toLowerCase().includes(sendFormInput.value.toLowerCase()) )
+        //    if (matches.length !== 0)  {
+        //     matches.forEach(match => {
+        //         const newDiv=document.createElement('div');
+        //         newDiv.classList.add("txn", "flex", "justify-cont-between")
+        //         newDiv.setAttribute('onclick', popInput(match.user_tag))
+        //         newDiv.innerHTML=`
+        //          <div class="txn-left-detail flex  gap1" style="background:red">
+        //                 <div class="txn-user flex-col">
+        //                     <p>${match.name}</p>
+        //                     <span class="txn-desc">@${match.user_tag}</span>
+        //                 </div>
+        //             </div>  
+        //             <div class="txn-right-detail">
+        //                 <div class="txn-user flex-col">
+        //                     <p class="flex align-i-center gap2"><img width="20px" src="./images/Frame 586916.svg"  alt=''>${match.points} Points</p>
+        //                 </div>
+        //             </div> `
+        //         txn_suggests.appendChild(newDiv)
+        //     })
+        //     } else {
+        //         txn_suggests.textContent='No user matching query'
+        //     }
+        //     }
+        //     })
+
+
+        //     function popInput(usertag) {
+        //         user = dummyData.find(user => user.user_tag.toLowerCase() === usertag.toLowerCase())
+        //         sendFormInput.value = user.name
+        //     }
+
+
+
+
+
+        let dummyData = [
+                    { name: "Dan Belo", user_tag: "@shaffy", txn_pin: 7658, acct_balance: 20098, points: 45098 },
+                    { name: "Shater Tsaver", user_tag: "@shaterT", txn_pin: 7658, acct_balance: 290098, points: 498 },
+                    { name: "Satar Mchiaga", user_tag: "@MchiagaS", txn_pin: 7658, acct_balance: 208, points: 4598 }
+                ];
+
+        const txn_suggests = document.querySelector(".txn-suggests");
+        const sendForm = document.querySelector("form");
+        const sendFormInput = document.querySelector("input");
+        const confirmBtn = document.querySelector(".confirmBtn");
+
+        // Clear previous suggestions when typing in the form
+        sendFormInput.addEventListener("keyup", () => {
+            txn_suggests.textContent = ''; // Clear suggestions
+            if (sendFormInput.value.trim().length !== 0) {
+                // Filter the dummy data based on user input
+                const matches = dummyData.filter(data =>
+                    data.name.toLowerCase().includes(sendFormInput.value.toLowerCase()) ||
+                    data.user_tag.toLowerCase().includes(sendFormInput.value.toLowerCase())
+                );
+
+                // Display matching results or a no match message
+                if (matches.length !== 0) {
+                    matches.forEach(match => {
+                        const newDiv = document.createElement('div');
+                        newDiv.classList.add("txn", "flex", "justify-cont-between");
+
+                        // Add an event listener to the newDiv to populate the form on click
+                        newDiv.addEventListener('click', () => popInput(match.user_tag));
+
+                        newDiv.innerHTML = `
+                            <div class="txn-left-detail flex gap1" >
+                                <div class="txn-user flex-col">
+                                    <p>${match.name}</p>
+                                    <span class="txn-desc">${match.user_tag}</span>
+                                </div>
+                            </div>  
+                            <div class="txn-right-detail">
+                                <div class="txn-user flex-col">
+                                    <p class="flex align-i-center gap2">
+                                        <img width="20px" src="./images/Frame 586916.svg" alt=""> ${match.points} Points
+                                    </p>
+                                </div>
+                            </div>
+                        `;
+
+                        txn_suggests.appendChild(newDiv);
+                        // confirmBtn.style.display='block'
+                    });
+                } else {
+                    txn_suggests.innerHTML = `<p> No user matching query </p>`;
+                    confirmBtn.style.display='none'
+                }
+            }
+        });
+
+        function popInput(usertag) {
+            const user = dummyData.find(user => user.user_tag.toLowerCase() === usertag.toLowerCase());
+            if (user) {
+                sendFormInput.value = user.name; // Populate the input with the user's name
+                txn_suggests.textContent = ''; // Clear suggestions once a selection is made
+                confirmBtn.style.display='block'
+            }
+        }
+
+        confirmBtn.addEventListener("click", () => {
+            sendForm.submit()
+        })
+
+
+
+
+
+    </script>
+</body>
+</html>

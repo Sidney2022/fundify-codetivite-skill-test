@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Skill Test</title>
+    <style>
+        body {
+            background: #ccc;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pin-section container flex-col align-i-center gap3 
+            py-3 justify-cont-center" >
+        <div class="icon ">
+            <img src="./images/Frame 586916.svg" alt="">
+        </div>
+            <h3>Enter your Pin</h3>
+            <div class="pin-slots flex gap3 my-2">
+                <input type="text" maxlength="1" readonly class="pin-slot">
+                <input type="text" maxlength="1" readonly class="pin-slot">
+                <input type="text" maxlength="1" readonly class="pin-slot">
+                <input type="text" maxlength="1" readonly class="pin-slot">
+            </div>
+
+
+            <div class="keypad">
+                <ul class="keys">
+                    <li class="key">1</li>
+                    <li class="key">2</li>
+                    <li class="key">3</li>
+                    <li class="key">4</li>
+                    <li class="key">5</li>
+                    <li class="key">6</li>
+                    <li class="key">7</li>
+                    <li class="key">8</li>
+                    <li class="key">9</li>
+                    <li class="key"><img src="./images/pin-option.svg" alt=""></li>
+                    <li class="key">0</li>
+                    <li class="clear-input">Clear</li>
+                </ul>
+                
+            </div>
+            <button class="confirmBtn text-center my-3">Confirm</button>
+            <a class="forgot-pin" href="#">Forgot Pin?</a>
+    </div>
+   
+
+
+   
+
+   
+
+    
+    
+
+   
+
+
+    <script>
+        function pagenav(location) {
+            window.location.href=location
+        }
+
+        const pin_length=4
+        let entered_pin=''
+        const keys =document.querySelectorAll(".key")
+        const clear_input =document.querySelector(".clear-input")
+        const confirmBtn=document.querySelector(".confirmBtn")
+        const pin_slots =document.querySelectorAll(".pin-slot")
+        keys.forEach(key => {
+            key.addEventListener('click', () => {
+                var value = key.textContent
+
+                if (entered_pin.length < pin_length ) {
+                    entered_pin += value 
+                    updatePinDisplay()
+                    // alert(entered_pin)
+                    
+                } else {alert('max pin entry is 4')}
+            })
+        })
+        function updatePinDisplay() {
+            for (let i =0; i<pin_slots.length; i++) {
+                    pin_slots[i].value=i < entered_pin.length ? '*' : ""
+                } 
+        }
+        clear_input.addEventListener('click', () => {
+               entered_pin = ''
+               updatePinDisplay()
+                })
+
+        allowed_pins = ['4324', '8976', '8901', '8763', '2973', '1111']
+        confirmBtn.addEventListener('click', () => {
+               if (entered_pin.length < 4) {
+                alert("incorrect pin")
+                entered_pin=''
+                updatePinDisplay()
+            }
+            const pin = allowed_pins.find(pin => pin === entered_pin);
+            if (pin) {
+               if ( confirm("Are you sure you want to proceed?") ) {
+                   window.location.replace("dump.html")
+               }
+                
+            } else {
+                   alert("incorrect pin")
+
+               }
+
+                })
+
+        
+        
+    </script>
+</body>
+</html>
