@@ -15,17 +15,17 @@
 
 <body>
 
-    <div class="pin-section container flex-col align-i-center gap3 
-            py-3 justify-cont-center" >
+    <div class="pin-section container flex-col align-i-center gap3
+            p justify-cont-" >
         <div class="icon ">
             <img src="./images/pin-icon.svg" alt="">
         </div>
             <h3>Enter your Pin</h3>
-            <div class="pin-slots flex gap3 my-2">
-                <input type="text" maxlength="1" readonly class="pin-slot">
-                <input type="text" maxlength="1" readonly class="pin-slot">
-                <input type="text" maxlength="1" readonly class="pin-slot">
-                <input type="text" maxlength="1" readonly class="pin-slot">
+            <div class="pin-slots flex gap4 my-2">
+                <div class="pin-slot"> </div>
+                <div class="pin-slot"> </div>
+                <div class="pin-slot"> </div>
+                <div class="pin-slot"> </div>
             </div>
 
 
@@ -45,9 +45,9 @@
                     <li class="clear-input">Clear</li>
                 </ul>
                 
+                <button class="confirmBtn text-center my-3">Confirm</button>
+                <a class="forgot-pin" href="#">Forgot Pin?</a>
             </div>
-            <button class="confirmBtn text-center my-3">Confirm</button>
-            <a class="forgot-pin" href="#">Forgot Pin?</a>
     </div>
    
 
@@ -87,7 +87,7 @@
         })
         function updatePinDisplay() {
             for (let i =0; i<pin_slots.length; i++) {
-                    pin_slots[i].value=i < entered_pin.length ? '*' : ""
+                    pin_slots[i].textContent=i < entered_pin.length ? '*' : ""
                 } 
         }
         clear_input.addEventListener('click', () => {
