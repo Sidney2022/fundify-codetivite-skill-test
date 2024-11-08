@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Skill Test</title>
-    <style>
-        body {
-            background: var(--tetiary-color);
-            margin-bottom: 0;
-        }
-    </style>
+  
 </head>
 
-<body>
+<body id="pin-page">
 
     <div class="pin-section container flex-col align-i-center gap3
             p justify-cont-" >
@@ -49,17 +44,6 @@
                 <a class="forgot-pin" href="#">Forgot Pin?</a>
             </div>
     </div>
-   
-
-
-   
-
-   
-
-    
-    
-
-   
 
 
     <script>
@@ -76,7 +60,6 @@
         keys.forEach(key => {
             key.addEventListener('click', () => {
                 var value = key.textContent
-
                 if (entered_pin.length < pin_length ) {
                     entered_pin += value 
                     updatePinDisplay()
@@ -98,19 +81,16 @@
         allowed_pins = ['4324', '8976', '8901', '8763', '2973', '1111']
         confirmBtn.addEventListener('click', () => {
                if (entered_pin.length < 4) {
-                alert("incorrect pin")
                 entered_pin=''
                 updatePinDisplay()
             }
             const pin = allowed_pins.find(pin => pin === entered_pin);
             if (pin) {
                if ( confirm("Are you sure you want to proceed?") ) {
-                   window.location.replace("dump.html")
+                   window.location.replace("success.html")
                }
-                
             } else {
                    alert("incorrect pin")
-
                }
 
                 })

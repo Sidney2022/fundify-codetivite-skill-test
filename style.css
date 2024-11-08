@@ -29,8 +29,11 @@
 
 body{
     background: var(--primary-color);
-    /* background: var(--tetiary-color); */
     font-family: inter;
+}
+
+body#pin-page {
+    background: var(--tetiary-color);
 }
 
 .container {
@@ -450,6 +453,8 @@ span#connect {
     /* font-weight: 500 !important; */
     margin: 10px 0 30px 0;
 }
+
+
 
 .pin-section h3 {
     font-size: 20px;
