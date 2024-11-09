@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <link rel="stylesheet" href="style.css">
-    <title>Skill Test</title>
+    <title>Fundify</title>
 </head>
 <body>
+
+
     <nav class="navbar">
         <div class="container">
             <ul class="nav-items">
-                <li><img src="./images/Frame 586916.svg" alt=""></li>
-                <li><img src="./images/002-swap 1.svg" alt=""></li>
-                <li><img src="./images/Frame 586889.svg" alt=""></li>
-                <li><img src="./images/LetsIconsCreditCardLight 1.svg" alt=""></li>
-                <li><img src="./images/PhGearThin.svg" alt=""></li>
+                <li><a href="#"> <img src="./images/Frame 586916.svg" alt=""></a> </li>
+                <li><a href="#"> <img src="./images/002-swap 1.svg" alt=""></a> </li>
+                <li><a href="index.html"> <img src="./images/Frame 586889.svg" alt=""></a> </li>
+                <li><a href="#"> <img src="./images/LetsIconsCreditCardLight 1.svg" alt=""></a> </li>
+                <li><a href="#"> <img src="./images/PhGearThin.svg" alt=""></a> </li>
             </ul>
         </div>
     </nav>
 
 
-   
-
     <div class="top-nav">
         <div class="container">
             <div class="top-nav-content">
                 <span class="text-icon">
-                    <a onclick="pagenav('index.html')"><img src="./images/Arrow_left.svg" alt=""> </a>
+                    <a href="find-rec.html"><img src="./images/Arrow_left.svg" alt=""> </a>
                 </span>
                 <h2>Send Money</h2>
             </div>
@@ -39,7 +40,7 @@
     <div class="container">
         <div class="user-wallet-info flex align-i-center justify-cont-">
             <p class="wallet-bal-text">Wallet balance : </p>
-            <p class="wallet-bal-amt">$25,000.40</p>
+            <p class="wallet-bal-amt"><span class="currency-sym"></span> ₣25,000.40</p>
         </div>
     </div>
 
@@ -47,8 +48,8 @@
         <div class="container">
            <form action="#">
                 <div class="input-field">
-                    <span class="currency">$</span>
-                    <input type="text" placeholder="" required>
+                    <span class="currency ">₣</span>
+                    <input oninput="formatNum(this)" type="text" placeholder="" required > 
                     <select name="" id="">
                         <option value="">CHF</option>
                         <option value="">USD</option>
@@ -57,7 +58,7 @@
                         <option value="">UKR</option>
                     </select>
                 </div>
-                <p class="tf-fee text-center">+ $200 Transfer Fee</p>
+                <p class="tf-fee text-center">+ ₣200 Transfer Fee</p>
                 <div class="input-field">
                     <input type="text" placeholder="Comment (Optional)">
                 </div>
@@ -68,7 +69,6 @@
    
     
 
-   
 
 
     <script>
@@ -76,6 +76,14 @@
             window.location.href=location
         }
 
+        function formatNum (amtInput){
+            let value =amtInput.value.replace(/,/g, '')
+            if (!isNaN(value)) {
+                amtInput.value=Number(value).toLocaleString('en-us')
+            } else {
+                amtInput.value=amtInput.value.slice(0,-1)
+            }
+        }
         
     </script>
 </body>

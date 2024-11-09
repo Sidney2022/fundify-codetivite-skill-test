@@ -79,14 +79,21 @@
                 })
 
         allowed_pins = ['4324', '8976', '8901', '8763', '2973', '1111']
+        const queryParams=new URLSearchParams(window.location.search)
+        const redirect_page = queryParams.get("redirect_to")
+
         confirmBtn.addEventListener('click', () => {
                if (entered_pin.length < 4) {
                 entered_pin=''
                 updatePinDisplay()
             }
             const pin = allowed_pins.find(pin => pin === entered_pin);
+
             if (pin) {
-               if ( confirm("Are you sure you want to proceed?") ) {
+                if (redirect_page == 'home') {
+                    localStorage.setItem("logged_in", 'true')
+                    window.location.replace("index.html")
+                } else  if ( confirm("Are you sure you want to proceed?") ) {
                    window.location.replace("success.html")
                }
             } else {

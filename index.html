@@ -7,14 +7,15 @@
     <title>Skill Test</title>
 </head>
 <body>
+
     <nav class="navbar">
         <div class="container">
             <ul class="nav-items">
-                <li><img src="./images/Frame 586916.svg" alt=""></li>
-                <li><img src="./images/002-swap 1.svg" alt=""></li>
-                <li><img src="./images/Frame 586889.svg" alt=""></li>
-                <li><img src="./images/LetsIconsCreditCardLight 1.svg" alt=""></li>
-                <li><img src="./images/PhGearThin.svg" alt=""></li>
+                <li><a href="#"> <img src="./images/Frame 586916.svg" alt=""></a> </li>
+                <li><a href="#"> <img src="./images/002-swap 1.svg" alt=""></a> </li>
+                <li><a href="index.html"> <img src="./images/Frame 586889.svg" alt=""></a> </li>
+                <li><a href="#"> <img src="./images/LetsIconsCreditCardLight 1.svg" alt=""></a> </li>
+                <li><a href="#"> <img src="./images/PhGearThin.svg" alt=""></a> </li>
             </ul>
         </div>
     </nav>
@@ -25,7 +26,7 @@
                 <div class="profile-img"><img src="./images/image 1.svg" alt=""></div>
                 <div class="flex align-i-center">
                     <div class="tf-alert ">
-                        $2,000 <span class="from-text">from</span> Shater Tsavarnnnnnnnnnnnnnnnnnnn
+                        ₣2,000 <span class="from-text">from</span> Shater Tsavarnnnnnnnnnnnnnnnnnnn
                     </div>
                     <span id="connect"></span>
                     <div class="tf-alert-icon"> 
@@ -43,7 +44,7 @@
             <div class="acct-bal-card">
                 <div class="card-item1 flex-col " style="justify-content: space-; height:150px; " >
                     <p>Total Balance</p>
-                    <h1 >$25,000.40</h1>
+                    <h1 >₣25,000.40</h1>
 
                     <p class="flex gap2 ">My Wallet <img src="./images/Arrow_right.svg" alt=""></p>
                 </div>
@@ -53,7 +54,7 @@
                 </div>
                 <div class="card-item3">
                     <button onclick="pagenav('topup.html')"  class="tf-link"><img src="./images/wallet.svg" alt="">Top Up</button>
-                    <button onclick="pagenav('tf.html')" class="tf-link"><img src="./images/send.svg" alt="">Transfer</button>
+                    <button onclick="pagenav('tf-options.html')" class="tf-link"><img src="./images/send.svg" alt="">Transfer</button>
                     <button onclick="pagenav('topup.html')" class="tf-link"><img src="./images/elipse.svg" alt="">More</button>
                 </div>
             </div>
@@ -74,7 +75,7 @@
                     </div>  
                     <div class="txn-right-detail">
                         <div class="txn-user flex-col">
-                            <p>&#8376;2,000</p>
+                            <p>₣2,000</p>
                             <span class="txn-desc">01/02/2024</span>
                         </div>
                     </div>
@@ -89,7 +90,7 @@
                     </div>  
                     <div class="txn-right-detail">
                         <div class="txn-user flex-col">
-                            <p>&#8376;2,000</p>
+                            <p>₣2,000</p>
                             <span class="txn-desc">01/02/2024</span>
                         </div>
                     </div>
@@ -104,7 +105,7 @@
                     </div>  
                     <div class="txn-right-detail">
                         <div class="txn-user flex-col">
-                            <p>&#8376;2,000</p>
+                            <p>₣2,000</p>
                             <span class="txn-desc">01/02/2024</span>
                         </div>
                     </div>
@@ -119,7 +120,7 @@
                     </div>  
                     <div class="txn-right-detail">
                         <div class="txn-user flex-col">
-                            <p>&#8376;2,000</p>
+                            <p>₣2,000</p>
                             <span class="txn-desc">01/02/2024</span>
                         </div>
                     </div>
@@ -132,7 +133,12 @@
     <script>
         function pagenav(location) {
             window.location.href=location
-            // window.location.replace(location)
+        }
+        if (!localStorage.getItem("logged_in")) {
+            document.querySelector("body").style.visibility='hiddev'
+            window.location.replace("pin.html")
+        } else {
+            document.querySelector("body").style.visibility='visible'
         }
     </script>
 </body>

@@ -77,12 +77,10 @@ nav {
 .profile-img {
     width: 42px;
     height: 42px;
-    /* background-color: red; */
 } 
 
 .tf-alert, .tf-alert-icon {
     background: var(--another-color);
-    /* padding: 20px; */
 }
 
 .tf-alert {
@@ -99,7 +97,7 @@ nav {
     font-size: var(--small-text);
 }
 span#connect {
-    width: 24px;
+    width: 20px;
     height: 4px;
     
     background: var(--another-color);
@@ -119,7 +117,7 @@ span#connect {
 .tf-alert-icon::after {
     position: absolute;
     content: '';
-    bottom: 1cqw;
+    bottom: 1px;
     right: 2px;
     height: 10px;
     width: 10px;
@@ -165,9 +163,10 @@ span#connect {
 }
 
 .card-item2{
-    border-top: 2px dotted var(--tetiary-color);
+    border-top: 2px dashed var(--tetiary-color);
     justify-content: space-around; 
     position: relative;
+    
 }
     
 .card-item2::before {
@@ -250,6 +249,7 @@ span#connect {
 
 .txns-history span {
     opacity: 60%;
+
     font-size: var(--small-text);
 }
 
@@ -286,24 +286,18 @@ span#connect {
 
 }
 
-.top-nav a {
-    /* justify-self: flex-start; */
-    /* margin-right: auto; */
-    /* border: 2px solid red; */
-}
+
 
 
 .tf-methods {
     width: 90%;
     margin: 0 auto;
-    /* padding: 20px; */
     margin-top: 20px;
 
 }
 .tf-methods a {
     padding: 30px 20px;
     display: block;
-    /* grid-template-columns: repeat(3, 1fr); */
     align-items: center;
     background: var(--secondary-color);
     margin: 10px 0;
@@ -325,13 +319,17 @@ span#connect {
     color: var(--tetiary-color);
 }
 .txn-suggests {
-    height: 50vh;
+    height: 40vh;
     overflow-y: scroll;
     padding: 10px;
 }
 
+.tf-methods button {
+    margin-top: 100px;
+}
+
 .txn-suggests::-webkit-scrollbar {
-    width: 5px;
+    width: 2px;
 }
 .txn-suggests::-webkit-scrollbar-thumb {
     background: #ccc;
@@ -342,7 +340,8 @@ span#connect {
 }
 
 .txn-suggests span{
-    color: rgba(244, 241, 235, 0.1);
+    color:var(--tetiary-color);
+    opacity: 60%;
     font-size:var(--regular-text-three)
 }
 
@@ -376,7 +375,7 @@ span#connect {
 
 .confirmBtn {
     width:100%;
-    padding:14px 129px;
+    padding:14px ;
    border-radius: 10px;
    background: var(--tetiary-color);
    color: var(--primary-color);
@@ -422,7 +421,10 @@ span#connect {
 
 .input-field {
     position: relative;
+}
 
+.input-field input {
+    padding:20px 30px;
 }
 
 .input-field select {
@@ -439,12 +441,10 @@ span#connect {
 
 .input-field .currency {
     position: absolute;
-    left: 10px;
-    top: 23px;
+    left: 15px;
+    top: 19px;
     width: 56px;
     color: var(--tetiary-color);
-    font-size: 10px;
-    
 }
 
 .tf-fee {
@@ -536,8 +536,10 @@ span#connect {
 
 .success-section .container {
     padding: 0 20px ;
-    height: 90vh;
+    /* height: 90vh; */
     color: var(--tetiary-color);
+    display:flex;
+    flex-direction:column;
 }
 
 .txn-details div {
@@ -569,7 +571,7 @@ span#connect {
     font-size: 18px;
     font-weight: 500; 
     position: absolute;
-    right: 15px;
+    right: 0%;
     top: 25px;
     color: var(--tetiary-color);
 }
@@ -581,6 +583,18 @@ span#connect {
 
 
 /* All Pages */
+
+
+.currency-sym {
+    position: relative;
+}
+.currency-sym::after {
+    position: absolute;
+    content: url(./images/);
+    top: 0;
+    left: 0;
+}
+
 li {
     list-style: none;
 }
