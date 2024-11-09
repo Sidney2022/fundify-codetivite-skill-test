@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +7,11 @@
 }
 
 :root {
-    --primary-color : #141414;
-    --secondary-color: #1A1A1A;
-    --tetiary-color: #f4f1eb;
-    --another-color: #e8e4da;
-    --another-text-color: #F7F7F7;
+    --primary-color-one: #141414;
+    --primary-color-two: #1A1A1A;
+    --secondary-color: #f4f1eb;
+    --tetiary-color: #e8e4da;
+    --tetiary-color-two: #F7F7F7;
 
 
 
@@ -28,12 +30,12 @@
 }
 
 body{
-    background: var(--primary-color);
+    background: var(--primary-color-one);
     font-family: inter;
 }
 
 body#pin-page {
-    background: var(--tetiary-color);
+    background: var(--secondary-color);
 }
 
 .container {
@@ -45,7 +47,7 @@ nav {
     position: fixed;
     width: 100%;
     bottom: 0;
-    background: var(--primary-color);
+    background: var(--primary-color-one);
     z-index: 1;
     height: 10vh;
 
@@ -63,7 +65,7 @@ nav {
 }
 
 .top-section {
-    background: var(--tetiary-color);
+    background: var(--secondary-color);
     height: 150px;
     padding: 20px 20px 0 20px ;
 }
@@ -80,7 +82,7 @@ nav {
 } 
 
 .tf-alert, .tf-alert-icon {
-    background: var(--another-color);
+    background: var(--tetiary-color);
 }
 
 .tf-alert {
@@ -100,7 +102,7 @@ span#connect {
     width: 20px;
     height: 4px;
     
-    background: var(--another-color);
+    background: var(--tetiary-color);
 }
 
 .tf-alert-icon {
@@ -129,14 +131,14 @@ span#connect {
 
 .acct-bal-card {
     margin: 0 auto;
-    color: var(--another-text-color);
+    color: var(--tetiary-color-two);
     width: 90%;
     transform:  translateY(-20%);
 }
 
 .card-item1, .card-item2 {
     padding: 20px;
-    background: var(--secondary-color);
+    background: var(--primary-color-two);
     border-radius: 10px;
     /* margin: 0; */
     background-repeat: no-repeat;
@@ -150,7 +152,7 @@ span#connect {
 
 .card-item1 h1 {
     font-size: var(--primary-header);
-    color: var(--another-text-color);
+    color: var(--tetiary-color-two);
     font-weight: var(--h1-bold);
 }
 
@@ -163,7 +165,7 @@ span#connect {
 }
 
 .card-item2{
-    border-top: 2px dashed var(--tetiary-color);
+    border-top: 2px dashed var(--secondary-color);
     justify-content: space-around; 
     position: relative;
     
@@ -192,14 +194,14 @@ span#connect {
 
 .card-item3 button {
 
-    background:var(--tetiary-color);
+    background:var(--secondary-color);
     /* padding: 7px 20px; */
     padding: 10px 20px;
     /* width: 33%; */
     /* border: 1px solid red; */
     text-align: center;
     font-size: var(--regular-text-two);
-    color: var(--primary-color);
+    color: var(--primary-color-one);
     display: flex;
     align-items: center;
     gap: 5px;
@@ -221,7 +223,7 @@ span#connect {
 
 
 .txns-history {
-    color: var(--tetiary-color);
+    color: var(--secondary-color);
     margin-bottom: 85px;
     
 }
@@ -234,7 +236,7 @@ span#connect {
 }
 .txns-history a{
     font-size: var(--regular-text-three);
-    color: var(--another-color)
+    color: var(--tetiary-color)
 }
 
 .txns-history img {
@@ -299,9 +301,9 @@ span#connect {
     padding: 30px 20px;
     display: block;
     align-items: center;
-    background: var(--secondary-color);
+    background: var(--primary-color-two);
     margin: 10px 0;
-    color: var(--tetiary-color);
+    color: var(--secondary-color);
     font-size: var(--regular-text-one);
     font-weight: var(--h2-bold);
     border-radius: 10px;
@@ -312,11 +314,11 @@ span#connect {
 .tf-methods input {
     width: 100%;
     padding: 20px;
-    background: var(--secondary-color);
+    background: var(--primary-color-two);
     border-radius: 10px;
     border: none;
     font-size: var(--regular-text-one);
-    color: var(--tetiary-color);
+    color: var(--secondary-color);
 }
 .txn-suggests {
     height: 40vh;
@@ -340,7 +342,7 @@ span#connect {
 }
 
 .txn-suggests span{
-    color:var(--tetiary-color);
+    color:var(--secondary-color);
     opacity: 60%;
     font-size:var(--regular-text-three)
 }
@@ -364,7 +366,7 @@ span#connect {
 }
 
 .tf-methods p {
-    color: var(--tetiary-color);
+    color: var(--secondary-color);
     font-weight: var(--thin-weight);
 }
 
@@ -377,8 +379,8 @@ span#connect {
     width:100%;
     padding:14px ;
    border-radius: 10px;
-   background: var(--tetiary-color);
-   color: var(--primary-color);
+   background: var(--secondary-color);
+   color: var(--primary-color-one);
    font-size: var(--regular-text-one);
    font-weight: var(--h1-bold);
    border: none;
@@ -393,8 +395,8 @@ span#connect {
 }
 
 .rec-info {
-    background: var(--another-color);
-    color: var(--primary-color);
+    background: var(--tetiary-color);
+    color: var(--primary-color-one);
     padding: 6px 20px;
     border-radius: 43px;
     /* width: fit-content; */
@@ -432,9 +434,9 @@ span#connect {
     right: 20px;
     height: 100%;
     width: 56px;
-    background: var(--secondary-color);
+    background: var(--primary-color-two);
     border: none;
-    color: var(--tetiary-color);
+    color: var(--secondary-color);
     font-size: 16px;
     cursor: pointer;
 }
@@ -444,7 +446,7 @@ span#connect {
     left: 15px;
     top: 19px;
     width: 56px;
-    color: var(--tetiary-color);
+    color: var(--secondary-color);
 }
 
 .tf-fee {
@@ -458,7 +460,7 @@ span#connect {
 
 .pin-section h3 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: var(--h1-bold);
 }
 .pin-section {
     height: 100vh;
@@ -473,11 +475,10 @@ span#connect {
     width: 12px;
     padding: 12px;
     display: flex;
-    background: #CCAF7E; 
+    background: #E4D7BF; 
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: var(--tetiary-color);
     
 }
 .pin-slot:focus {
@@ -499,9 +500,9 @@ span#connect {
     list-style: none;
     gap: 50px 70px;
     margin: 30px 0 20px 0;
-    font-weight: 600;
+    font-weight: var(--h1-bold);
     font-size: 30px;
-    color: var(--secondary-color);
+    color: var(--primary-color-two);
 
 
  }
@@ -521,14 +522,14 @@ span#connect {
  }
 
 .pin-section .confirmBtn {
-    background: #141414;
+    background: var(--primary-color-one);
     color: #F4F1EB;
 
 }
 
 
 .forgot-pin {
-    color: #141414;
+    color: var(--primary-color-one);
     font-size: 14px;
     font-weight: 500;
 }
@@ -537,7 +538,7 @@ span#connect {
 .success-section .container {
     padding: 0 20px ;
     /* height: 90vh; */
-    color: var(--tetiary-color);
+    color: var(--secondary-color);
     display:flex;
     flex-direction:column;
 }
@@ -553,11 +554,11 @@ span#connect {
 }
 
 .txn-details h3 {
-    font-weight: 600;
+    font-weight: var(--h1-bold);
     font-size: 16px;
 } 
 .txn-details p {
-    color: var(--tetiary-color);
+    color: var(--secondary-color);
     font-size: 16px;
     opacity: 70%;
     margin-top: 5px;
@@ -573,7 +574,7 @@ span#connect {
     position: absolute;
     right: 0%;
     top: 25px;
-    color: var(--tetiary-color);
+    color: var(--secondary-color);
 }
 
 
@@ -709,77 +710,3 @@ a{
 
 
 
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter_24pt-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter_24pt-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
-
-
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter_28pt-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter_24pt-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter_28pt-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter_28pt-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter_28pt-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter_28pt-BoldItalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter_28pt-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter_28pt-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-}
-
-/* Repeat the pattern for each font file */

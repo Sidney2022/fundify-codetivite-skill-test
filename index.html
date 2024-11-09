@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Skill Test</title>
+    <title>Fundify</title>
 </head>
 <body>
 
@@ -26,7 +26,7 @@
                 <div class="profile-img"><img src="./images/image 1.svg" alt=""></div>
                 <div class="flex align-i-center">
                     <div class="tf-alert ">
-                        ₣2,000 <span class="from-text">from</span> Shater Tsavarnnnnnnnnnnnnnnnnnnn
+                       <img width="10px" src="./images/arrow-down.svg" alt=""> ₣2,000 <span class="from-text">from</span> Shater Tsavarnnnnnnnnnnnnnnnnnnn
                     </div>
                     <span id="connect"></span>
                     <div class="tf-alert-icon"> 
@@ -135,8 +135,8 @@
             window.location.href=location
         }
         if (!localStorage.getItem("logged_in")) {
-            document.querySelector("body").style.visibility='hiddev'
-            window.location.replace("pin.html")
+            document.querySelector("body").style.visibility='hidden'
+            window.location.replace("pin.html?redirect_to=home")
         } else {
             document.querySelector("body").style.visibility='visible'
         }

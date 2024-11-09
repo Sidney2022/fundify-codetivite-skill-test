@@ -62,15 +62,13 @@
                 var value = key.textContent
                 if (entered_pin.length < pin_length ) {
                     entered_pin += value 
-                    updatePinDisplay()
-                    // alert(entered_pin)
-                    
+                    updatePinDisplay()                    
                 } else {alert('max pin entry is 4')}
             })
         })
         function updatePinDisplay() {
             for (let i =0; i<pin_slots.length; i++) {
-                    pin_slots[i].textContent=i < entered_pin.length ? '*' : ""
+                    pin_slots[i].style.background=i < entered_pin.length ? '#CCAF7E' : ""
                 } 
         }
         clear_input.addEventListener('click', () => {
@@ -95,8 +93,12 @@
                     window.location.replace("index.html")
                 } else  if ( confirm("Are you sure you want to proceed?") ) {
                    window.location.replace("success.html")
+                } else {
+                   window.location.replace("index.html")
                }
             } else {
+                    entered_pin=''
+                    updatePinDisplay()
                    alert("incorrect pin")
                }
 
