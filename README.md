@@ -27,7 +27,7 @@ Access to Fundify is restricted to users with one of the following authorized PI
 
 - **HTML**: Structure and content.
 - **CSS**: Styling for mobile responsiveness and visual appeal.
-- **JavaScript** (optional): For interactivity, such as PIN validation.
+- **JavaScript**: For interactivity, such as PIN validation, user search etc.
 
 ## Usage
 
